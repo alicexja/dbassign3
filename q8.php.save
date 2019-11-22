@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h3>Assign a doctor to a patient</h3>
+<form action="home.php" method="get">
+<button type="submit"> Return </button>
+</form>
+
+<form method="post" action="">
+Assign this doctor
+<select name="addDocid" id="addDocid">
+<?php
+include "getAllDoctorNames.php";
+?>
+</select>
+to treat this patient
+<form method="post" action="addTreating.php">
+<input type="text" visible=False name="inv_">
+<select name="addPatientid" id="addPatientid">
+<?php
+include "getPatientsNotOfADoctor.php"
+?>
+</select>
+<input type="submit" value="Apply">
+</form>
+
+<hr>
+Now all treating relationships are:
+<?php 
+include "getAllTreatings.php";
+?>
+</body>
+</html>
