@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 
 $docid=$_POST["docid"];
 $query="select distinct p.fname as pfname,p.lname as plname from treating t,patient p where doc='".$docid."'";
@@ -8,7 +8,7 @@ if(!$result)
 {
 die("error:".mysqli_error($connection));
 }
-//echo "The doctor is treating ".mysqli_num_rows($result)."patients";
+
 if(mysqli_num_rows($result)>0)
 {
 echo "<table>";

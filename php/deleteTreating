@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $docid=$_POST["stop_docid"];
 $ohipno=$_post["stopPatient"];
 $query="delete from treating where doc='$docid' and patient='$ohipno'";

@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 
 $licenseno=$_POST["licenseno"];
 $fname=$_POST["fname"];
@@ -33,7 +33,7 @@ if(!$result2)
 die("failed inserting new doctor");
 }
 echo "Successfully added new doctor";
-header("Location:q3.php");
+header("Location:../html/q3.php");
 }
 exit;
 ?>

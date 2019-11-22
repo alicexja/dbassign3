@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 
 $docid=$_POST["choose_doc"];
 $query = "select * from doctor inner join hospital on doctor.worksin = hospital.hcode where licenseno='$docid'";

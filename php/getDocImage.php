@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $docid=$_POST["docid"];
 $query="select * from doctor where licenseno='".$docid."'";
 $result=mysqli_query($connection,$query);
@@ -12,7 +12,7 @@ while($row = mysqli_fetch_assoc($result))
 {
 if($row["docimage"]==NULL)
 {
-header("Location:q10_addpicture.php");
+header("Location:../html/q10_addpicture.php");
 }
 else
 {

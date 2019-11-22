@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $order=$_POST["radio_order"];
 $by=$_POST["radio_by"];
 if($order == "") $order="ASC";

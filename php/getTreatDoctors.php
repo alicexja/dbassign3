@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $ohip=$_POST["ohip"];
 $query1 = "select * from patient where ohipno='".$ohip."'";
 $result1=mysqli_query($connection,$query1);

@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 
 $newHname=$_POST["newHname"];
 $hcode = $_POST["hcode"];
@@ -10,7 +10,7 @@ if(!mysqli_query($connection,$query))
 die("error while trying to update hospital name".mysqli_error($connection));
 }
 else{
-header("Location:home.php");
+header("Location:../home.php");
 exit;
 }
 

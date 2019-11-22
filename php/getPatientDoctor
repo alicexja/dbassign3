@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $whichdoc=$_POST["stopDoc"];
 $query="select distinct * from patient where ohipno in (select patient from treating where patient='$whichdoc')";
 $result=mysqli_query($connection,$query);

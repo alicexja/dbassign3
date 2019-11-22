@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $query="select * from doctor";
 $result=mysqli_query($connection,$query);
 if(!$result)

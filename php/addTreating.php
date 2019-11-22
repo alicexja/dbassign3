@@ -1,6 +1,6 @@
 <?php
 include "connectdb.php";
-$docid=$_POST["docid"];
+$docid=$_POST["assign_docid"];
 $ohipno=$_POST["assignPatient"];
 $query="insert into treating values ('$docid','$ohipno')";
 $result=mysqli_query($connection,$query);

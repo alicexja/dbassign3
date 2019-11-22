@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $query = "select * from doctor where licenseno not in (select doc from treating)";
 $result = mysqli_query($connection,$query);
 

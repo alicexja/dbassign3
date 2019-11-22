@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $query = "select * from hospital inner join doctor on hospital.head=doctor.licenseno order by hname ASC";
 $result=mysqli_query($connection,$query);
 

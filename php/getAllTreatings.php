@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $query="select d.fname as dfname,d.lname as dlname,p.fname as pfname,p.lname as plname  from treating t,doctor d,patient p where t.doc=d.licenseno and t.patient=p.ohipno order by dfname";
 $result=mysqli_query($connection,$query);
 if(!$result)

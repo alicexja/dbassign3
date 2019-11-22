@@ -1,5 +1,5 @@
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 $docid=$_POST["docid"];
 $imglink=$_POST["imglink"];
 
@@ -10,7 +10,7 @@ die("failed adding image to doctor:".mysqli_error($connection));
 }
 else
 {
-header("Location:q10.php");
+header("Location:../html/q10.php");
 }
 exit;
 ?>
