@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" type="text/css" href="../home.css">
 </head>
 <body>
-<script src = "home.js"></script>
+<script src = "../js/home.js"></script>
 
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 ?>
 
 <h3>List all the doctor's first name and last name</h3>
 
-<form method="get" action="home.php">
+<form method="get" action="../home.php">
  <button type="submit">Return</button>
 </form>
 
@@ -31,7 +31,7 @@ In <br>
 <hr>
 
 <?php
- include "getDoctorNamesSorted.php";
+ include "../php/getDoctorNamesSorted.php";
 ?>
 
 <h3>Select a doctor and display information</h3>
@@ -39,7 +39,7 @@ In <br>
 <select name="choose_doc" id="choose_doc">
 <option>--select here--</option>
 <?php
-include "getAllDoctorNames.php";
+include "../php/getAllDoctorNames.php";
 ?>
 </select>
 </form>
@@ -47,7 +47,7 @@ include "getAllDoctorNames.php";
 <?php
 if(isset($_POST["choose_doc"]))
 {
-include "getDocInfo.php";
+include "../php/getDocInfo.php";
 }
 ?>
 </body>

@@ -12,7 +12,7 @@ echo "<option value='".$row["ohipno"]."'>".$row["fname"]." ".$row["lname"]."</op
 
 }
 echo "</select>";
-echo "<input type='hidden' name='docid' value='$whichdoc'>";
+echo "<input type='hidden' name='assign_docid' value='$whichdoc'>";
 echo "<button type='submit' name='addsubmit'>Assign</button>";
 echo "</form>";
 ?>

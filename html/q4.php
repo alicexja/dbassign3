@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" type="text/css" href="../home.css">
+</head>
 <body>
-<script src="q4.js"></script>
+<script src="../js/q4.js"></script>
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 ?>
 
 <h3>Delete a doctor</h3>
-<form method="get" action="home.php">
+<form method="get" action="../home.php">
 <button type="submit">Return</button>
 </form>
 
@@ -16,7 +18,7 @@ include "connectdb.php";
 <select name="docid" id="docid">
 <option>--select a doctor-- </option>
 <?php
-include "getAllDoctorNames.php";
+include "../php/getAllDoctorNames.php";
 ?>
 </select>
 </form>
@@ -25,11 +27,11 @@ include "getAllDoctorNames.php";
 <?php
 if(isset($_POST["docid"]))
 {
-include "getDoctorTreating.php";
+include "../php/getDoctorTreating.php";
 }
 ?>
 </form>
-<form action="deleteDoctor.php" method="post">
+<form action="../php/deleteDoctor.php" method="post">
 <input type="text" name="inv_docid" id="inv_docid">
 <input type="button" value="Delete" onclick="checkSubmit()">
 </form>

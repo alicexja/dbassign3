@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" type="text/css" href="../home.css">
+</head>
 <body>
 <h3>Update Hospital's name</h3>
-<form method="get" action="home.php">
+<form method="get" action="../home.php">
 <button type="submit">Return</button>
 </form>
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 ?>
 Select a hospital
-<form action="changeHospitalName.php" method="post">
+<form action="../php/changeHospitalName.php" method="post">
 <select name="hcode" id="hcode">
 <?php
-include "q3ListHospitals.php";
+include "../php/q3ListHospitals.php";
 ?>
 </select>
 <br>

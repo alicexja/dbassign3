@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" type="text/css" href="../home.css">
+</head>
 <body>
 <h3>Select a patient by entering OHIP number</h3>
-<form action="home.php" method="get">
+<form action="../home.php" method="get">
 <button type="submit"> Return </button>
 </form>
 <form action="" method="post">
@@ -13,7 +15,7 @@
 <?php
 if(isset($_POST["ohip"]))
 {
-include "getTreatDoctors.php";
+include "../php/getTreatDoctors.php";
 }
 ?>
 

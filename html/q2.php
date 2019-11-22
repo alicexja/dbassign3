@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" type="text/css" href="../home.css">
+</head>
 <body>
 <?php
-include "connectdb.php";
+include "../php/connectdb.php";
 ?>
 
 <h3>List all doctors licensed before a given date</h3>
-<form method="get" action="home.php">
+<form method="get" action="../home.php">
 <button type="submit">Return</button>
 </form>
 Doctors licensed before this date are listed:
@@ -20,8 +22,8 @@ Doctors licensed before this date are listed:
 <?php
 if(isset($_POST["adate"]))
 {
-include "connectdb.php";
-include "q2getDoctor.php";
+include "../php/connectdb.php";
+include "../php/q2getDoctor.php";
 }
 ?>
 
