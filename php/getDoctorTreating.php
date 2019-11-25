@@ -34,12 +34,13 @@ echo "<td>".$row["plname"]."</td>";
 echo "</tr>";
 }
 echo "</table>";
-echo "<button type='button' value='$docid' onclick='delFunction(value)'>Delete doctor</button>";
+
 }
 else
 {
 echo "The doctor is not treating patient.";
 }
+echo "<button type='button' value='$docid' onclick='delFunction(value)'>Delete doctor</button>";
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>
