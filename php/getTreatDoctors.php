@@ -43,5 +43,5 @@ echo "</table>";
 }
 mysqli_free_result($result1);
 mysqli_free_result($result2);
-
+mysqli_close($connection);
 ?>

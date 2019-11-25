@@ -24,5 +24,5 @@ echo "<td>".$row["lname"]."</td>";
 echo "</tr>";
 }
 echo "</table>";
-
+mysqli_close($connection);
 ?>

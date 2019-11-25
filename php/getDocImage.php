@@ -21,4 +21,5 @@ echo "<img src='".$row["docimage"]."' alt='Oops the link is down' style='width:2
 }
 
 mysqli_free_result($result);
+mysqli_close($connection);
 ?>

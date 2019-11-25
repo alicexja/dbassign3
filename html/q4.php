@@ -24,20 +24,24 @@ include "../php/getAllDoctorNames.php";
 </form>
 <br>
 
-<form action="" method="post">
 <?php
 if(isset($_POST["docid"]))
 {
 include "../php/getDoctorTreating.php";
 }
 ?>
+
+
+<form id="docform" action="" method="post">
+<input type="text" name="inv_docid" id="inv_docid">
 </form>
 
-<form id="docform" action="../php/deleteDoctor.php" method="post">
-<input type="text" name="inv_docid" id="inv_docid" hidden=True>
-<input type="button" value="Delete" onclick="checkSubmit()">
-</form>
-
+<?php
+if(isset[$_POST["inv_docid"]])
+{
+ include "../php/deleteDoctor.php";	
+}
+?>
 
 </body>
 </html>

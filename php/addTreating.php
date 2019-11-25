@@ -13,4 +13,5 @@ else
 echo "successfully inserted";
 }
 //mysqli_free_result($result);
+mysqli_close($connection);
 ?>

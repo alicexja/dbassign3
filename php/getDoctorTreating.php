@@ -13,7 +13,7 @@ while($row=mysqli_fetch_assoc($result0))
 echo "You have selected doctor ".$row["fname"]." ".$row["lname"]."<br>";
 }
 
-$query="select distinct p.fname as pfname,p.lname as plname from treating t,patient p where doc='$docid' and t.patient=p.ohipno";
+$query="select distinct p.fname as pfname,p.lname as plname from treating t,patient p where t.doc='$docid' and t.patient=p.ohipno";
 $result = mysqli_query($connection,$query);
 if(!$result)
 {
@@ -34,6 +34,7 @@ echo "<td>".$row["plname"]."</td>";
 echo "</tr>";
 }
 echo "</table>";
+echo "<button type='button' value='$docid' onclick='delFunction(value)'>Delete doctor</button>"
 }
 else
 {

@@ -13,4 +13,5 @@ else
 header("Location:../html/q10.php");
 }
 exit;
+mysqli_close($connection);
 ?>

@@ -24,4 +24,7 @@ echo "</select>";
 echo "<input type='hidden' name='assign_docid' value='$whichdoc'>";
 echo "<button type='submit' name='addsubmit'>Assign</button>";
 echo "</form>";
+
+mysqli_free_result($result);
+mysqli_close($connection);
 ?>

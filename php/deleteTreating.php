@@ -13,4 +13,5 @@ else
 {
 echo "successfully deleted";
 }
+mysqli_close($connection);
 ?>

@@ -14,4 +14,5 @@ echo "<option value='".$row["hcode"]."'>".$row["hname"]." at ".$row["hcity"].","
 }
 
 mysqli_free_result($result);
+mysqli_close($connection);
 ?>

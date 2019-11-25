@@ -13,5 +13,5 @@ else{
 header("Location:../home.php");
 exit;
 }
-
+mysqli_close($connection);
 ?>

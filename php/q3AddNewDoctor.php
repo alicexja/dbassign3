@@ -36,4 +36,5 @@ echo "Successfully added new doctor";
 header("Location:../html/q3.php");
 }
 exit;
+mysqli_close($connection);
 ?>

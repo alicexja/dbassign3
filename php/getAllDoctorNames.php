@@ -12,4 +12,5 @@ while($row = mysqli_fetch_assoc($result))
 echo "<option value='".$row["licenseno"]."'>".$row["fname"]." ".$row["lname"]."</option>";
 }
 mysqli_free_result($result);
+mysqli_close($connection);
 ?>
