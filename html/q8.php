@@ -15,7 +15,7 @@ include "../php/connectdb.php";
 <h4>Assign this doctor</h4>
 <form action="" method="post">
 <select name="assignDoc" id="assignDoc">
-<option>--select</option>
+<option>--select--</option>
 <?php
 include "../php/getAllDoctorNames.php";
 ?>
@@ -52,6 +52,12 @@ if(isset($_POST["addsubmit1"]))
 {
 	include "../php/deleteTreating.php";
 }
+?>
+
+<hr>
+<h4>Here are all treating relationships</h4>
+<?php
+include "../php/getAllTreatings.php";
 ?>
 </body>
 </html>

@@ -19,9 +19,9 @@ die("failed getting doctor with licenseno");
 if(mysqli_num_rows($result1)>0)
 {
 echo "License number".$licenseno."already exists,please change a new one";
-echo "<form action='q3.php' method='get'>";
+echo "<form action='../html/q3.php' method='get'>";
 echo "<button type='submit'>Return</button>";
-echo "</form>"
+echo "</form>";
 mysqli_free_result($result1);
 }
 else
