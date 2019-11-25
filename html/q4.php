@@ -31,13 +31,12 @@ include "../php/getDoctorTreating.php";
 }
 ?>
 
-
 <form id="docform" action="" method="post">
 <input type="text" name="inv_docid" id="inv_docid">
 </form>
 
 <?php
-if(isset[$_POST["inv_docid"]])
+if(isset($_POST["inv_docid"]))
 {
  include "../php/deleteDoctor.php";	
 }

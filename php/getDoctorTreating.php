@@ -34,7 +34,7 @@ echo "<td>".$row["plname"]."</td>";
 echo "</tr>";
 }
 echo "</table>";
-echo "<button type='button' value='$docid' onclick='delFunction(value)'>Delete doctor</button>"
+echo "<button type='button' value='$docid' onclick='delFunction(value)'>Delete doctor</button>";
 }
 else
 {

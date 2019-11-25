@@ -26,14 +26,15 @@ mysqli_free_result($result1);
 }
 else
 {
-$query2="insert into doctor values('$licenseno','$fname','$lname','$specialty','$licenseDate','$worksin')";
+$query2="insert into doctor(licenseno,fname,lname,specialty,licenseDate,worksin) values('$licenseno','$fname','$lname','$specialty','$licenseDate','$worksin')";
+echo $query2;
 $result2 = mysqli_query($connection,$query2);
 if(!$result2)
 {
-die("failed inserting new doctor");
+die("failed inserting new doctor".mysqli_error($connection));
 }
 echo "Successfully added new doctor";
-header("Location:../html/q3.php");
+//header("Location:../html/q3.php");
 }
 exit;
 mysqli_close($connection);
