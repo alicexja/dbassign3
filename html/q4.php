@@ -32,7 +32,7 @@ if(isset($_POST["docid"]))
 ?>
 
 <form id="docform" action="" method="post">
-	<input type="text" name="inv_docid" id="inv_docid">
+	<input type="hidden" name="inv_docid" id="inv_docid">
 </form>
 
 <?php
