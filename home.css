@@ -22,7 +22,9 @@ tr,td{
 	padding:10px,
 	text-align:center;
 }
-
+a:hover {
+     color:#F09595;
+	    }
 .ret
 {
 text-transform: uppercase;
