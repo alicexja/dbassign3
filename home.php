@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Assignment 3</title>
-
+<link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
 	<h1>Assignment 3</h1>
