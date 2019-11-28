@@ -6,7 +6,7 @@
 <body>
 <h3>Select a patient by entering OHIP number</h3>
 <form action="../home.php" method="get">
-<button type="submit"> Return </button>
+<button type="submit" class="ret"> Return </button>
 </form>
 <form action="" method="post">
 <input type="text" name="ohip" id="ohip">

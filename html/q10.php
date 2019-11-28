@@ -10,7 +10,7 @@ include "../php/connectdb.php";
 <script src="../js/q10.js"></script>
 <h3>Select a doctor to his his picture</h3>
 <form action="../php/home.php" method="get">
-	<button type="submit">Return</button>
+	<button type="submit" class="ret">Return</button>
 </form>
 <form action="" method="post">
 	<select name="docid" id="docid">

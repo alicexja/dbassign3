@@ -13,7 +13,7 @@
 <h3>List all the doctor's first name and last name</h3>
 
 <form method="get" action="../home.php">
-	<button type="submit">Return</button>
+	<button type="submit" class="ret">Return</button>
 </form>
 
 Select the way you want to order the doctors.<br>

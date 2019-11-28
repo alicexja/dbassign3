@@ -9,7 +9,7 @@ include "../php/connectdb.php";
 ?>
 <h3>Assign or stop treating relationship</h3>
 <form action="../home.php" method="get">
-	<button type="submit">Return</button>
+	<button type="submit" class="ret">Return</button>
 </form>
 
 <h4>Assign this doctor</h4>

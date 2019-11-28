@@ -11,7 +11,7 @@ include "../php/connectdb.php";
 
 <h3>Add a new doctor</h3>
 <form method="get" action="../home.php">
-<button type="submit">Return</button>
+<button type="submit" class="ret">Return</button>
 </form>
 
 <form action="../php/q3AddNewDoctor.php" method="POST">

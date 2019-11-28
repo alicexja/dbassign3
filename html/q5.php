@@ -6,7 +6,7 @@
 <body>
 	<h3>Update Hospital's name</h3>
 	<form method="get" action="../home.php">
-		<button type="submit">Return</button>
+		<button type="submit" class="ret">Return</button>
 	</form>
 	<?php
 		include "../php/connectdb.php";
