@@ -1,21 +1,21 @@
 body{
-background-color:
-font-size:18px;
-font-family:'Helvetica',cursive;
+	background-image:url('paper.jfif');
+	font-size:18px;
+	font-family:'Helvetica',cursive;
 }
 
 select{
-font-family:"Mali",cursive;
-background-color:cornflowerblue;
+	font-family:"Mali",cursive;
+	background-color:#C2B0C9;
 }
 
 table{
-border:1px solid black;
-border-collapse:collapse;
-width:50%;
-background-color:#572987;
+	border:1px solid black;
+	border-collapse:collapse;
+	width:50%;
+	background-color:#9656A1;
 }
 tr,td{
-padding:10px,
-text-align:center;
+	padding:10px,
+	text-align:center;
 }

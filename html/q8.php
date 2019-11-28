@@ -9,38 +9,38 @@ include "../php/connectdb.php";
 ?>
 <h3>Assign or stop treating relationship</h3>
 <form action="../home.php" method="get">
-<button type="submit">Return</button>
+	<button type="submit">Return</button>
 </form>
 
 <h4>Assign this doctor</h4>
 <form action="" method="post">
-<select name="assignDoc" id="assignDoc">
-<option>--select--</option>
-<?php
-include "../php/getAllDoctorNames.php";
-?>
-</select>
+	<select name="assignDoc" id="assignDoc">
+		<option>--select--</option>
+		<?php
+			include "../php/getAllDoctorNames.php";
+		?>
+	</select>
 </form>
 
 <?php
 if(isset($_POST["assignDoc"]))
 {
-include "../php/getPatientNotDoctor.php";
+	include "../php/getPatientNotDoctor.php";
 }
 if(isset($_POST["addsubmit"]))
 {
-include "../php/addTreating.php";
+	include "../php/addTreating.php";
 }
 ?>
 <hr>
 <h4>Stop this doctor</h4>
 <form action="" method="post">
-<select name="stopDoc" id="stopDoc">
-<option>--select--</option>
-<?php
-include "../php/getAllDoctorNames.php";
-?>
-</select>
+	<select name="stopDoc" id="stopDoc">
+		<option>--select--</option>
+		<?php
+			include "../php/getAllDoctorNames.php";
+		?>
+	</select>
 </form>
 
 <?php
@@ -57,7 +57,7 @@ if(isset($_POST["addsubmit1"]))
 <hr>
 <h4>Here are all treating relationships</h4>
 <?php
-include "../php/getAllTreatings.php";
+	include "../php/getAllTreatings.php";
 ?>
 </body>
 </html>

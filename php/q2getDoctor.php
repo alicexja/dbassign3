@@ -5,18 +5,19 @@ $result=mysqli_query($connection,$query);
 
 if(!$result)
 {
-die("query doctor failed");
+	die("query doctor failed");
 }
 echo "<table>";
 echo "<tr><td>First name</td><td>Last name</td><td>License date</td><td>Specialty</td></tr>";
+
 while($row=mysqli_fetch_assoc($result))
 {
-echo "<tr>";
-echo "<td>".$row["fname"]."</td>";
-echo "<td>".$row["lname"]."</td>";
-echo "<td>".$row["licenseDate"]."</td>";
-echo "<td>".$row["specialty"]."</td>";
-echo "</tr>";
+	echo "<tr>";
+	echo "<td>".$row["fname"]."</td>";
+	echo "<td>".$row["lname"]."</td>";
+	echo "<td>".$row["licenseDate"]."</td>";
+	echo "<td>".$row["specialty"]."</td>";
+	echo "</tr>";
 }
 echo "</table>";
 
